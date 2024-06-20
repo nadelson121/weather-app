@@ -1,0 +1,300 @@
+html {
+    height: 100%;
+    background-color: rgb(162, 221, 246);
+}
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, san-serif;
+    font-size: 30px;
+    display: grid;
+    /*gap: 20px;*/
+
+    grid-template:
+        "heading    heading     heading        button"    130px
+        "sun-temp       img       sun-low-temp    sun-high-temp"    130px
+        "mon-temp       img1      mon-low-temp    mon-high-temp"   130px
+        "tue-temp       img2       tue-low-temp    tue-high-temp"  130px
+        "wed-temp       img3       wed-low-temp    wed-high-temp"  130px
+        "thurs-temp     img4       thurs-low-temp  thurs-high-temp"    130px
+        "fri-temp       img5       fri-low-temp    fri-high-temp"  130px
+        "sat-temp       img6       sat-low-temp    sat-high-temp"  130px
+        /300px      700px       300px           300px
+    ;
+
+    justify-items: center;
+    justify-content: center;
+
+    min-height: 100%;
+
+    /*align-content: center;
+    align-items: center;*/
+}
+
+[id="heading"] {
+    justify-self: center;
+    grid-area: heading;
+    font-size: 60px;
+}
+
+[id="sun-temp"] {
+    align-self: center;
+    padding-left: 60px;
+    grid-area: sun-temp;
+    font-size: 45px;
+}
+
+[id="sun-low-temp"] {
+    align-self: center;
+    justify-self: end;
+    grid-area: sun-low-temp;
+    font-size: 45px;
+}
+[id="sun-high-temp"] {
+    align-self: center;
+    justify-self: start;
+    grid-area: sun-high-temp;
+    font-size: 45px;
+}
+
+[id="mon-temp"] {
+    align-self: center;
+    padding-left: 60px;
+    grid-area: mon-temp;
+    font-size: 45px;
+}
+
+[id="mon-low-temp"] {
+    align-self: center;
+    justify-self: end;
+    grid-area: mon-low-temp;
+    font-size: 45px;
+}
+[id="mon-high-temp"] {
+    align-self: center;
+    justify-self: start;
+    grid-area: mon-high-temp;
+    font-size: 45px;
+}
+
+[id="tue-temp"] {
+    align-self: center;
+    padding-left: 60px;
+    grid-area: tue-temp;
+    font-size: 45px;
+}
+
+[id="tue-low-temp"] {
+    align-self: center;
+    justify-self: end;
+    grid-area: tue-low-temp;
+    font-size: 45px;
+}
+[id="tue-high-temp"] {
+    align-self: center;
+    justify-self: start;
+    grid-area: tue-high-temp;
+    font-size: 45px;
+}
+
+[id="wed-temp"] {
+    align-self: center;
+    padding-left: 60px;
+    grid-area: wed-temp;
+    font-size: 45px;
+}
+
+[id="wed-low-temp"] {
+    align-self: center;
+    justify-self: end;
+    grid-area: wed-low-temp;
+    font-size: 45px;
+}
+[id="wed-high-temp"] {
+    align-self: center;
+    justify-self: start;
+    grid-area: wed-high-temp;
+    font-size: 45px;
+}
+
+[id="thurs-temp"] {
+    align-self: center;
+    padding-left: 60px;
+    grid-area: thurs-temp;
+    font-size: 45px;
+}
+
+[id="thurs-low-temp"] {
+    align-self: center;
+    justify-self: end;
+    grid-area: thurs-low-temp;
+    font-size: 45px;
+}
+[id="thurs-high-temp"] {
+    align-self: center;
+    justify-self: start;
+    grid-area: thurs-high-temp;
+    font-size: 45px;
+}
+
+[id="fri-temp"] {
+    align-self: center;
+    padding-left: 60px;
+    grid-area: fri-temp;
+    font-size: 45px;
+}
+
+[id="fri-low-temp"] {
+    align-self: center;
+    justify-self: end;
+    grid-area: fri-low-temp;
+    font-size: 45px;
+}
+[id="fri-high-temp"] {
+    align-self: center;
+    justify-self: start;
+    grid-area: fri-high-temp;
+    font-size: 45px;
+}
+
+[id="sat-temp"] {
+    align-self: center;
+    padding-left: 60px;
+    grid-area: sat-temp;
+    font-size: 45px;
+}
+
+[id="sat-low-temp"] {
+    align-self: center;
+    justify-self: end;
+    grid-area: sat-low-temp;
+    font-size: 45px;
+}
+[id="sat-high-temp"] {
+    align-self: center;
+    justify-self: start;
+    grid-area: sat-high-temp;
+    font-size: 45px;
+}
+
+.custom-class {
+    justify-self: center;
+    align-self: center;
+    grid-area: img;
+    width: 100px;
+}
+
+.custom-class1 {
+    justify-self: center;
+    align-self: center;
+    grid-area: img1;
+    width: 100px;
+}
+
+.custom-class2 {
+    justify-self: center;
+    align-self: center;
+    grid-area: img2;
+    width: 100px;
+}
+
+.custom-class3 {
+    justify-self: center;
+    align-self: center;
+    grid-area: img3;
+    width: 100px;
+}
+
+.custom-class4 {
+    justify-self: center;
+    align-self: center;
+    grid-area: img4;
+    width: 100px;
+}
+
+.custom-class5 {
+    justify-self: center;
+    align-self: center;
+    grid-area: img5;
+    width: 100px;
+}
+
+.custom-class6 {
+    justify-self: center;
+    align-self: center;
+    grid-area: img6;
+    width: 100px;
+}
+
+/*[id="img2"] {
+    justify-self: center;
+    align-self: center;
+    grid-area: img;
+    width: 250px;
+}
+
+[id="img3"] {
+    justify-self: center;
+    align-self: center;
+    grid-area: img;
+    width: 250px;
+}
+
+[id="img4"] {
+    justify-self: center;
+    align-self: center;
+    grid-area: img;
+    width: 250px;
+}
+
+[id="img5"] {
+    justify-self: center;
+    align-self: center;
+    grid-area: img;
+    width: 250px;
+}
+
+[id="img6"] {
+    justify-self: center;
+    align-self: center;
+    grid-area: img;
+    width: 250px;
+}
+
+[id="img7"] {
+    justify-self: center;
+    align-self: center;
+    grid-area: img;
+    width: 250px;
+}*/
+/*[id="low-temp"] {
+    grid-area: low-temp;
+}
+[id="high-temp"] {
+    grid-area: high-temp;
+}
+
+a {
+    grid-area: link;
+    text-decoration: none;
+    color: lightgrey;
+    font-size: 12px;
+}*/
+
+button {
+    grid-area: button;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #007c89;
+    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    padding: 0 18px;
+    :hover {
+        color: #ffffff;
+        background-color: #006570;
+    }
+}

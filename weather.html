@@ -1,0 +1,42 @@
+<!--initially defines the scripting language type as HTML-->
+<!doctype HTML>
+
+<!--defines that html is the scripting language used-->
+<html>
+<!--information about the browser like metadata, CSS files, and titles-->
+<head>
+	<!--meta = metadata-->
+	<!--charset = character data-->
+	<!--utf-8 (unicode text format 8-bit): universal character set-->
+	<meta charset="utf-8">
+	<!--href = hypertexxt reference to the .css file
+		rel = relationship between specified external file (.css) and current file-->
+	<link href="style.css" rel="stylesheet"/>
+	<!--not necessary for weather app but wrote this to print an alert on the webpage-->
+	<script type="module" src="main.js"></script>
+	<!--script type=""module" src=""main.js"></script>-->
+	<!-- <link> </link> -->
+</head>
+<body>
+	<div id="heading">Weather Currently</div>
+	<div id="current-temp">30°C</div>
+	<!--src = specifies source of external image-->
+	<img src="cloudy.png"/>
+	<div id="low-temp">20°C</div>
+	<div id="high-temp">30°C</div>
+
+	<a href="weekly.html">
+		<button>weekly forecast</button>
+	</a>
+		<!--
+		<h1>My Cool Weather App</h1>
+		<p>
+			Weather apps are cool. Pun intended
+		</p>
+		-hyperlink to Google
+		<a href="https://google.com">Go to Google</a>
+		-for user interface
+		<button>Get the weather</button>
+		-->
+</body>
+</html>

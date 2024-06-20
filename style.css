@@ -1,0 +1,77 @@
+html {
+    height: 100%;
+    background-color: rgb(162, 221, 246);
+}
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, san-serif;
+    font-size: 30px;
+    display: grid;
+    /*grid-template-rows: minmax(auto, 40px) minmax(auto, 40px) minmax(auto, 40px) minmax(auto, 40px) */
+    gap: 20px;
+
+    grid-template:
+        "heading         heading         heading     heading"  100px
+        "conditions     conditions      conditions     conditions"
+        "current-temp   current-temp    current-temp    current-temp"
+        "low-temp       low-temp       high-temp       high-temp"
+        "link           link            link            link"
+    ;
+
+    justify-items: center;
+    justify-content: center;
+
+    min-height: 100%;
+
+    align-content: center;
+    align-items: center;
+}
+
+[id="heading"] {
+    grid-area: heading;
+    font-size: 60px;
+}
+
+[id="current-temp"] {
+    grid-area: current-temp;
+    font-size: 45px;
+}
+
+img {
+    justify-self: center;
+    align-self: center;
+    grid-area: conditions;
+    width: 250px;
+}
+[id="low-temp"] {
+    grid-area: low-temp;
+}
+[id="high-temp"] {
+    grid-area: high-temp;
+}
+
+a {
+    grid-area: link;
+    text-decoration: none;
+    color: lightgrey;
+    font-size: 12px;
+}
+
+button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #007c89;
+    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    padding: 0 18px;
+    :hover {
+        color: #ffffff;
+        background-color: #006570;
+    }
+}
